@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuzzEx - Coming Soon</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:'Inter',sans-serif;
+            background:#000;
+            color:#fff;
+            min-height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            overflow:hidden;
+            position:relative;
+        }
+
+        .glow{
+            position:absolute;
+            width:500px;
+            height:500px;
+            background:#03f8c5;
+            filter:blur(180px);
+            opacity:.15;
+            border-radius:50%;
+        }
+
+        .glow.one{
+            top:-150px;
+            left:-150px;
+        }
+
+        .glow.two{
+            bottom:-150px;
+            right:-150px;
+        }
+
+        .container{
+            text-align:center;
+            max-width:800px;
+            padding:40px 20px;
+            z-index:2;
+        }
+
+        .logo{
+            font-size:4rem;
+            font-weight:700;
+            color:#03f8c5;
+            letter-spacing:-2px;
+            margin-bottom:20px;
+        }
+
+        h1{
+            font-size:3.5rem;
+            font-weight:700;
+            line-height:1.1;
+            margin-bottom:20px;
+        }
+
+        p{
+            color:rgba(255,255,255,.75);
+            font-size:1.1rem;
+            line-height:1.8;
+            max-width:650px;
+            margin:0 auto 40px;
+        }
+
+        .badge{
+            display:inline-block;
+            padding:12px 24px;
+            border:1px solid rgba(3,248,197,.4);
+            background:rgba(3,248,197,.08);
+            color:#03f8c5;
+            border-radius:50px;
+            font-size:.9rem;
+            font-weight:600;
+            margin-bottom:30px;
+        }
+
+        .email-box{
+            display:flex;
+            max-width:520px;
+            margin:0 auto;
+            gap:12px;
+            flex-wrap:wrap;
+            justify-content:center;
+        }
+
+        .email-box input{
+            flex:1;
+            min-width:260px;
+            padding:16px 20px;
+            border-radius:12px;
+            border:1px solid rgba(255,255,255,.12);
+            background:rgba(255,255,255,.05);
+            color:#fff;
+            outline:none;
+        }
+
+        .email-box button{
+            padding:16px 28px;
+            border:none;
+            border-radius:12px;
+            background:#03f8c5;
+            color:#000;
+            font-weight:700;
+            cursor:pointer;
+            transition:.3s;
+        }
+
+        .email-box button:hover{
+            transform:translateY(-2px);
+            box-shadow:0 0 25px rgba(3,248,197,.4);
+        }
+
+        .footer{
+            margin-top:50px;
+            color:rgba(255,255,255,.45);
+            font-size:.9rem;
+        }
+
+        @media(max-width:768px){
+            .logo{
+                font-size:3rem;
+            }
+
+            h1{
+                font-size:2.4rem;
+            }
+
+            p{
+                font-size:1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glow one"></div>
+    <div class="glow two"></div>
+
+    <div class="container">
+
+        <div class="badge">
+            Launching Soon
+        </div>
+
+        <div class="logo">Buzzex</div>
+
+        <h1>
+            The Future of Digital Asset Trading Starts Here
+        </h1>
+
+        <p>
+            A secure, powerful, and seamless crypto exchange built for traders,
+            investors, and businesses worldwide. We're putting the final pieces
+            together and preparing for launch.
+        </p>
+
+        <form class="email-box">
+            <input type="email" placeholder="Enter your email address">
+            <button type="submit">Notify Me</button>
+        </form>
+
+        <div class="footer">
+            © 2026 BuzzEx.com • All Rights Reserved
+        </div>
+
+    </div>
+
+</body>
+</html>
